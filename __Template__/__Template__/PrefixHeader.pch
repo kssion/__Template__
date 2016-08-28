@@ -1,0 +1,41 @@
+//
+//  PrefixHeader.pch
+//  Template
+//
+//  Created by Chance on 16/6/22.
+//  Copyright © 2016年 Chance. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#pragma mark - Classes
+#import "BaseViewController.h"
+#import "BaseNavigationController.h"
+
+
+#pragma mark - FrameworkKit
+#import "CTools.h"                          // app开发工具包
+
+#import "CrashHandle.h"                     // 崩溃日志记录
+
+#import "NetworkHandle.h"
+#import "XPNetworkHandle.h"                 // 网络请求工具
+#import "XPRequestCachesHandle.h"           // 自定义缓存请求
+#import "UITableView+XPNetworkHandle.h"     // 分页扩展 (基于 XPNetworkHandle)
+
+#import "AppServices.h"                     // App服务
+#import "UserManager.h"                     // 用户信息管理
+
+
+#pragma mark - Third
+#import "ThirdHeader.h"                     // 第三方库
+
+
+
+
+
+#endif /* PrefixHeader_pch */
